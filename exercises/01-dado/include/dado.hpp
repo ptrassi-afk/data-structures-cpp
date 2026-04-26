@@ -1,8 +1,12 @@
-#ifndef DADOS.HPP
-#define DADOS .HPP
+#ifndef DADO_HPP
+#define DADO_HPP
 
 class Dado
 {
+private:
+    int side;
+    int current_value = 0;
+
 public:
     Dado();
     Dado(int faces);

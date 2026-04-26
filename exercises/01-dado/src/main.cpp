@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include "dados.hpp"
+#include "dado.hpp"
 
 int main(void)
 {
