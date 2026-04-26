@@ -1,7 +1,7 @@
-# Cria o executável exclusivo para a atividade 01
+# Creates the exclusive executable for activity 01
 add_executable(app_temperatura
     src/main.cpp
 )
 
-# Avisa o compilador que os cabeçalhos (.hpp) desta atividade estão na pasta include/
+# Notifies the compiler that the headers (.hpp) for this activity are in the include/ folder
 target_include_directories(app_temperatura PRIVATE include)
