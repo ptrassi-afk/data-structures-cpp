@@ -1,6 +1,7 @@
 # Creates the exclusive executable for activity 03
 add_executable(app_produto
     src/main.cpp
+    src/produto.cpp
 )
 
 # Notifies the compiler that the headers (.hpp) for this activity are in the include/ folder
