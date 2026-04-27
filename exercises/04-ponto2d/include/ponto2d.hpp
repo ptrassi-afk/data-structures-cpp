@@ -4,8 +4,8 @@
 class Ponto2D
 {
 private:
-    double coord_x;
-    double coord_y;
+    double coord_x = 0.0;
+    double coord_y = 0.0;
 
 public:
     Ponto2D(double x, double y);
