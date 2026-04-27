@@ -9,9 +9,7 @@ class Produto
 private:
     std::string name;
     double price = 0.0;
-    double percentage; // maybe don't need it
     int stock = 0;
-    int amount; // maybe don't need it
 
 public:
     Produto(std::string nome, double preco, int estoque);
