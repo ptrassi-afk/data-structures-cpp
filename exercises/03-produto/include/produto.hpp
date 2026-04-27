@@ -1,16 +1,17 @@
 #ifndef PRODUTO_HPP
 #define PRODUTO_HPP
 
+#include <iostream>
 #include <string>
 
 class Produto
 {
 private:
-    std::string nome;
-    double preco;
-    double percentual;
-    int estoque;
-    int quantidade;
+    std::string name;
+    double price = 0.0;
+    double percentage; // maybe don't need it
+    int stock = 0;
+    int amount; // maybe don't need it
 
 public:
     Produto(std::string nome, double preco, int estoque);
