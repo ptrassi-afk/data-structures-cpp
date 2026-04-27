@@ -2,6 +2,7 @@
 #define TEMPERATURA_HPP
 
 #include <iostream>
+
 class Temperatura
 {
 private:
