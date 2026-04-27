@@ -6,9 +6,13 @@ Ponto2D::Ponto2D(double x, double y) : coord_x(x), coord_y(y) {}
 
 double Ponto2D::x() const
 {
-    
+    return this->coord_x;
 }
 
-double Ponto2D::y() const {}
+double Ponto2D::y() const
+{
+    return this->coord_y;
+}
+
 double Ponto2D::distanciaOrigem() {}
 double Ponto2D::distancia(const Ponto2D &outro) {}
