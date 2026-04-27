@@ -1,4 +1,4 @@
-# Creates the exclusive executable for activity 01
+# Creates the exclusive executable for activity 02
 add_executable(app_temperatura
     src/main.cpp
     src/temperatura.cpp 
