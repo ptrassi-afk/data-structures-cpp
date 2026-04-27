@@ -5,6 +5,13 @@
 
 class Produto
 {
+private:
+    std::string nome;
+    double preco;
+    double percentual;
+    int estoque;
+    int quantidade;
+
 public:
     Produto(std::string nome, double preco, int estoque);
     // pré-condições: preco >= 0, estoque >= 0
