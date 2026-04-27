@@ -7,6 +7,6 @@
 add_subdirectory(01-dado)
 add_subdirectory(02-temperatura)
 add_subdirectory(03-produto)
-add_subdirectory(04-ponto-2d)
+add_subdirectory(04-ponto2d)
 add_subdirectory(05-sensor)
 add_subdirectory(06-tabuleiro)
