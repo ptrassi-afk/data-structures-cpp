@@ -5,7 +5,7 @@ class Sensor
 {
 private:
     int capacity;
-    double value;
+    int count = 0;
 
 public:
     Sensor(int capacidade);
