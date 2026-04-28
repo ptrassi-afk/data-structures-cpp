@@ -16,13 +16,8 @@ double Ponto2D::y() const
 
 double Ponto2D::distanciaOrigem()
 {
-    double b = pow((0.0 - this->x()), 2);
-    double a = pow((0.0 - this->y()), 2);
-    
-    return sqrt(b + a);
+    double distance = std::pow(this->coord_x, 2) + std::pow(this->coord_y, 2);
+    return std::sqrt(distance);
 }
 
-double Ponto2D::distancia(const Ponto2D &outro)
-{
-    return outro - this->distanciaOrigem();
-}
+double Ponto2D::distancia(const Ponto2D &outro) {}
