@@ -9,11 +9,13 @@ bool Sensor::registrar(double valor) // retorna false se capacidade esgotada
     if (this->count++ > this->capacity)
         return false;
 
-    this->capacity = valor;
     return true;
 }
 
 double Sensor::media() {}
+
 double Sensor::maximo() {}
+
 int Sensor::quantidade() {}
+
 int Sensor::capacidade() {}
