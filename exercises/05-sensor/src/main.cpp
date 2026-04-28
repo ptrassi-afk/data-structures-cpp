@@ -9,6 +9,7 @@ int main()
     Sensor s(5);
 
     double leituras[] = {23.4, 24.1, 22.8, 25.0, 23.9};
+
     for (int i = 0; i < 5; i++)
     {
         bool ok = s.registrar(leituras[i]);
@@ -21,6 +22,7 @@ int main()
     std::cout << "Máximo:   " << s.maximo() << "\n";
 
     bool ok = s.registrar(99.9);
+    
     std::cout << "\nRegistrar 99.9 (além da capacidade): "
               << (ok ? "ok" : "sensor cheio") << "\n";
 
