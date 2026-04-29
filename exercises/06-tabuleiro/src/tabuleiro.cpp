@@ -1,11 +1,8 @@
 #include <iostream>
 #include "tabuleiro.hpp"
 
-Tabuleiro::Tabuleiro(int linhas, int colunas)
+Tabuleiro::Tabuleiro(int linhas, int colunas) : _lines(linhas), _columns(colunas)
 {
-    _lines = linhas;
-    _columns = colunas;
-
     grid = new char *[_lines];
 
     for (int i = 0; i < _lines; i++)
