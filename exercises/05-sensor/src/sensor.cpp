@@ -1,21 +1,64 @@
 #include <iostream>
 #include "sensor.hpp"
 
-Sensor::Sensor(int capacidade) : capacity(capacidade) {}
-Sensor::~Sensor() {}
-
-bool Sensor::registrar(double valor) // retorna false se capacidade esgotada
+Sensor::Sensor(int capacidade)
 {
-    if (this->count++ > this->capacity)
-        return false;
-
-    return true;
+    _capacity = capacidade;
+    _amount = 0;
+    readings = new double[_capacity];
 }
 
-double Sensor::media() {}
+Sensor::~Sensor()
+{
+    delete[] readings;
+}
 
-double Sensor::maximo() {}
+bool Sensor::registrar(double valor)
+{
+    if (_amount < _capacity)
+    {
+        readings[_amount] = valor;
+        _amount++;
+        return true;
+    }
+    return false;
+}
 
-int Sensor::quantidade() {}
+double Sensor::media()
+{
+    if (_amount == 0)
+        return 0.0;
 
-int Sensor::capacidade() {}
+    double soma = 0.0;
+    for (int i = 0; i < _amount; i++)
+    {
+        soma += readings[i];
+    }
+    return soma / _amount;
+}
+
+double Sensor::maximo()
+{
+    if (_amount == 0)
+        return 0.0;
+
+    double max = readings[0];
+    for (int i = 1; i < _amount; i++)
+    {
+        if (readings[i] > max)
+        {
+            max = readings[i];
+        }
+    }
+    return max;
+}
+
+int Sensor::quantidade()
+{
+    return _amount;
+}
+
+int Sensor::capacidade()
+{
+    return _capacity;
+}
