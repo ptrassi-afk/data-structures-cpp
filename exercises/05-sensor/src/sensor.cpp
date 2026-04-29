@@ -1,9 +1,8 @@
 #include <iostream>
 #include "sensor.hpp"
 
-Sensor::Sensor(int capacidade)
+Sensor::Sensor(int capacidade) : _capacity(capacidade)
 {
-    _capacity = capacidade;
     _amount = 0;
     readings = new double[_capacity];
 }
