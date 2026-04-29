@@ -8,6 +8,7 @@ Tabuleiro::Tabuleiro(int linhas, int colunas) : _lines(linhas), _columns(colunas
     for (int i = 0; i < _lines; i++)
     {
         grid[i] = new char[_columns];
+        
         for (int j = 0; j < _columns; j++)
         {
             grid[i][j] = '.';
@@ -33,6 +34,7 @@ bool Tabuleiro::marcar(int linha, int coluna, char simbolo)
         grid[linha][coluna] = simbolo;
         return true;
     }
+
     return false;
 }
 
@@ -42,6 +44,7 @@ char Tabuleiro::simbolo(int linha, int coluna) const
     {
         return grid[linha][coluna];
     }
+
     return '\0';
 }
 
@@ -53,6 +56,7 @@ void Tabuleiro::imprimir()
         {
             std::cout << grid[i][j] << ' ';
         }
+
         std::cout << '\n';
     }
 }

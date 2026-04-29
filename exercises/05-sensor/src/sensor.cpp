@@ -20,6 +20,7 @@ bool Sensor::registrar(double valor)
         _amount++;
         return true;
     }
+
     return false;
 }
 
@@ -33,6 +34,7 @@ double Sensor::media()
     {
         soma += readings[i];
     }
+
     return soma / _amount;
 }
 
@@ -49,6 +51,7 @@ double Sensor::maximo()
             max = readings[i];
         }
     }
+    
     return max;
 }
 
