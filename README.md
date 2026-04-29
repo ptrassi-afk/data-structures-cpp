@@ -1,6 +1,6 @@
 # Data Structures I: Activities with ADTs in C++
 
-This repository contains the implementation of several Data Summary Types (ADTs) developed for the Algorithms and Data Structures I course. The main objective is to demonstrate the use of encapsulation, the separation between interface (.h) and implementation (.cpp), as well as memory management in C++.
+This repository contains the implementation of several Data Summary Types (ADTs) developed for the Algorithms and Data Structures I course. The main objective is to demonstrate the use of encapsulation, the separation between interface (.hpp) and implementation (.cpp), as well as memory management in C++.
 
 ## Project content
 
