@@ -1,11 +1,12 @@
 #ifndef SENSOR_HPP
-#define SNESOR_HPP
+#define SENSOR_HPP
 
 class Sensor
 {
 private:
-    int capacity;
-    int count = 0;
+    double *readings;
+    int _capacity;
+    int _amount;
 
 public:
     Sensor(int capacidade);
