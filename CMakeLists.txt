@@ -1,34 +1,34 @@
-# Define a versão mínima do CMake
+# Define the minimum version of CMake
 cmake_minimum_required(VERSION 3.15)
 
-# 1. Define o nome do seu projeto e a linguagem (C++)
-project(DataStructures VERSION 1.0 LANGUAGES CXX)
+#1. Define the project name and the language (C++)
+project(TADs VERSION 1.0 LANGUAGES CXX)
 
 # ---------------------------------------------------------
-# 2. CONFIGURAÇÕES GLOBAIS DO C++
+#2. GLOBAL CONFIGURATIONS IN C++
 # ---------------------------------------------------------
-# Força o uso do C++17
+# Forces the use of C++17
 set(CMAKE_CXX_STANDARD 17)
-# Obriga o compilador a respeitar a versão acima
+# Forces the compiler to respect the version above.
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-# Desativa extensões específicas de compilador (garante código multiplataforma)
+# Disables specific compiler extensions (ensures cross-platform code)
 set(CMAKE_CXX_EXTENSIONS OFF) 
 
 # ---------------------------------------------------------
-# 3. FLAGS DE COMPILAÇÃO RIGOROSAS
+#3. STRICT COMPILATION FLAGS
 # ---------------------------------------------------------
-# Aplica os avisos e erros para todas as subpastas automaticamente
+# Applies warnings and errors to all subfolders automatically
 if(MSVC)
-    # Se estiver usando Visual Studio no Windows
+    # If you are using Visual Studio on Windows
     add_compile_options(/W4 /WX)
 else()
-    # Se estiver usando GCC/Clang no Linux ou Mac
+    # If you are using GCC/Clang on Linux or Mac
     add_compile_options(-Wall -Wextra -Wpedantic -Werror)
 endif()
 
 # ---------------------------------------------------------
-# 4. DELEGAÇÃO DE PASTAS
+# 4. DELEGATION OF PORTFOLIOS
 # ---------------------------------------------------------
-# ATENÇÃO: O arquivo da raiz NUNCA chama as atividades diretamente.
-# Ele apenas aponta para a pasta organizadora "exercises".
+# WARNING: The root file NEVER calls the activities directly.
+# It only points to the organizing folder "exercises".
 add_subdirectory(exercises)
