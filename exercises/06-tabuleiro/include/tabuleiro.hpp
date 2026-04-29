@@ -19,4 +19,4 @@ public:
     int colunas();
 };
 
-#endif // TABULEIRO_H
+#endif
