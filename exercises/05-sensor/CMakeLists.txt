@@ -1,6 +1,7 @@
 # Creates the exclusive executable for activity 05
 add_executable(app_sensor
     src/main.cpp
+    src/sensor.cpp
 )
 
 # Notifies the compiler that the headers (.hpp) for this activity are in the include/ folder

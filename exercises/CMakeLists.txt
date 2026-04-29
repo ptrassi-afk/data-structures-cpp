@@ -1,8 +1,8 @@
 # ---------------------------------------------------------
-# GERENTE INTERMEDIÁRIO (Índice de Atividades)
+# INTERMEDIATE MANAGER (Index of Activities)
 # ---------------------------------------------------------
-# Cada linha abaixo manda o CMake entrar na respectiva pasta
-# e ler o CMakeLists.txt que está lá dentro.
+# Each line below instructs CMake to enter the respective folder
+# and read the CMakeLists.txt file located there.
 
 add_subdirectory(01-dado)
 add_subdirectory(02-temperatura)
