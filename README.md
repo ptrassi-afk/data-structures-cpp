@@ -1,6 +1,32 @@
-# data-structures-cpp
+# Data Structures I: Activities with ADTs in C++
 
-A collection of fundamental data structures and algorithms implemented in C++.
+This repository contains the implementation of several Data Summary Types (ADTs) developed for the Algorithms and Data Structures I course. The main objective is to demonstrate the use of encapsulation, the separation between interface (.h) and implementation (.cpp), as well as memory management in C++.
+
+## Project content
+
+The activity consists of 6 practical exercises that address different levels of modeling complexity:
+
+Dado: Simulation of a game die, exploring the generation of random numbers and the internal state of the object.
+
+Temperatura: Conversion and manipulation of thermometric scales (Celsius, Fahrenheit, and Kelvin) using access and modification methods.
+
+Produto: Management of inventory items, dealing with attributes such as name, price, and quantity in stock.
+
+Ponto2d e Alocação: Implementation of Cartesian coordinates focusing on dynamic memory allocation on the client (main) side.
+
+Sensor: Modeling of a technical reading device capable of storing and processing variations in the collected data.
+
+Tabuleiro: Two-dimensional structure to represent games or logical matrices, working with indexing and cell states.
+
+## Technologies and concepts used
+
+Language: C++
+
+Encapsulation: Use of classes with private and public members.
+
+Modularization: Division of code into header files and source code.
+
+Pointers: Address manipulation and dynamic allocation (Heap).
 
 ## How to compile:
 
